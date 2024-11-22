@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title class="title">Edit task</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Edit task</h1>
+
+        <a href="index.html">Home</a>
+        <form id="edit-form">
+            
+            <div class="task-name">
+                <label>Task name</label>
+                <input type="text" id="edit-task-name" name= "edit-task-name">
+            </div><br>
+                
+            <div id="due-date">
+                <label>Due-date</label>
+                <input type="datetime-local" id="edit-due-date" name="edit-due-date">
+            </div><br>
+                
+            <div id="priority">
+                <label>Degree of priority</label>
+                    <label><input type="radio" name="edit-priority" value="low">low</label>
+                    <label><input type="radio" name="edit-priority" value="medium">medium</label>
+                    <label><input type="radio" name="edit-priority" value="high">high</label>
+            </div><br>
+    
+            <div id="completion-time">
+                <label>Estimated time to complete (hr)</label>
+                <input type="number" step="0.1" id="edit-completion-time" name="edit-completion-time">
+            </div><br>
+
+            <input type="submit" id="edit-submit" value="submit">
+        </form>
+
+        <div id="edit-task">
+
+        </div>
+        
+         
+
+
+        <script src="edit-task.js"></script>
+    </body>
+</html>
